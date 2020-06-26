@@ -1,0 +1,42 @@
+import { Routes } from "@angular/router";
+
+import { DashboardComponent } from "../../pages/dashboard/dashboard.component";
+import { IconsComponent } from "../../pages/icons/icons.component";
+import { MapsComponent } from "../../pages/maps/maps.component";
+import { UserProfileComponent } from "../../pages/user-profile/user-profile.component";
+import { TablesComponent } from "../../pages/tables/tables.component";
+import { SearchPageComponent } from "src/app/pages/search-page/search-page.component";
+import { HomeComponent } from "src/app/pages/home/home.component";
+import { ProfileComponent } from "src/app/pages/profile/profile.component";
+import { BoardUserComponent } from "src/app/pages/board-user/board-user.component";
+import { BoardModeratorComponent } from "src/app/pages/board-moderator/board-moderator.component";
+import { BoardAdminComponent } from "src/app/pages/board-admin/board-admin.component";
+import { PatientListComponent } from "src/app/pages/patient-list/patient-list.component";
+import { PatientCreateComponent } from "src/app/pages/patient-create/patient-create.component";
+import { PatientDetailsComponent } from "src/app/pages/patient-details/patient-details.component";
+import { PatientUpdateComponent } from "src/app/pages/patient-update/patient-update.component";
+import { MedecinListComponent } from "src/app/pages/medecin-list/medecin-list.component";
+import { MedecinDetailsComponent } from "src/app/pages/medecin-details/medecin-details.component";
+import { MedecinUpdateComponent } from "src/app/pages/medecin-update/medecin-update.component";
+import { MedecinCreateComponent } from "src/app/pages/medecin-create/medecin-create.component";
+
+export const AdminLayoutRoutes: Routes = [
+  //{ path: "dashboard", component: DashboardComponent },
+  { path: "user-profile", component: UserProfileComponent },
+  { path: "tables", component: TablesComponent },
+  { path: "icons", component: IconsComponent },
+  { path: "maps", component: MapsComponent },
+  { path: "home", component: HomeComponent },
+  { path: "profile", component: ProfileComponent },
+  { path: "user", component: BoardUserComponent },
+  { path: "mod", component: BoardModeratorComponent },
+  { path: "admin", component: BoardAdminComponent },
+  { path: "patient-list", component: PatientListComponent },
+  { path: "patient-create", component: PatientCreateComponent },
+  { path: "patient-details/:id", component: PatientDetailsComponent },
+  { path: "patient-update/:id", component: PatientUpdateComponent },
+  { path: "medecin-list", component: MedecinListComponent },
+  { path: "medecin-create", component: MedecinCreateComponent },
+  { path: "medecin-details/:id", component: MedecinDetailsComponent },
+  { path: "medecin-update/:id", component: MedecinUpdateComponent },
+];
